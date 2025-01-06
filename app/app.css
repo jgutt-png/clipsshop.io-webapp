@@ -64,3 +64,43 @@ a {
   font-weight: 800;
   text-decoration: none;
 }
+
+.featured-section {
+  @apply py-16 bg-white overflow-hidden relative isolate;
+}
+
+.featured-heading {
+  @apply text-center text-gray-500 text-sm font-semibold tracking-wider uppercase mb-12 relative z-10;
+}
+
+.featured-logos {
+  @apply relative w-full overflow-hidden z-10;
+}
+
+.logos-container {
+  @apply flex items-center space-x-16;
+  animation: scroll 40s linear infinite;
+}
+
+.logos-container img {
+  @apply h-32 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 2rem));
+  }
+}
+
+.gradient-blur {
+  @apply absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl;
+}
+
+.gradient-element {
+  @apply relative aspect-[1155/678] w-[20rem] -translate-x-1/2 bg-gradient-to-tr from-[#017ca2] to-[#017ca2]/60 opacity-20;
+  clip-path: circle(30% at 50% 50%);
+}

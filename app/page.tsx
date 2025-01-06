@@ -9,14 +9,14 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* Header */}
-      <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-sm">
-        <nav className="flex items-center justify-between py-0.5 px-4 lg:px-6 bg-white/80 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]" aria-label="Global">
+      <header className="fixed inset-x-0 top-0 z-50 bg-white">
+        <nav className="flex items-center justify-between py-2 px-4 lg:px-6 bg-white shadow-[0_4px_10px_-2px_rgba(0,0,0,0.15)]" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">ReUp</span>
               <img 
-                className="h-20 w-auto" 
-                src="https://reup-main-website.s3.us-east-2.amazonaws.com/ReUp%20Logo%20Enhanced%20Transparent.png" 
+                className="h-12 w-auto" 
+                src="https://reup-main-website.s3.us-east-2.amazonaws.com/Logo_blue_web.png" 
                 alt="ReUp Logo" 
               />
             </a>
@@ -42,7 +42,7 @@ export default function Home() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a 
               href="#" 
-              className="group rounded-full px-5 py-2 text-base font-semibold text-primary border-2 border-primary hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
+              className="group rounded-full px-5 py-2 text-base font-semibold text-primary hover:border-2 hover:border-primary transition-all duration-300 ease-in-out"
             >
               Get Started
               <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">
@@ -63,8 +63,8 @@ export default function Home() {
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">ReUp</span>
                   <img 
-                    className="h-20 w-auto" 
-                    src="https://reup-main-website.s3.us-east-2.amazonaws.com/ReUp%20Logo%20Enhanced%20Transparent.png" 
+                    className="h-12 w-auto" 
+                    src="https://reup-main-website.s3.us-east-2.amazonaws.com/Logo_blue_web.png" 
                     alt="ReUp Logo" 
                   />
                 </a>
@@ -90,7 +90,7 @@ export default function Home() {
                   <div className="py-6">
                     <a
                       href="#"
-                      className="group flex items-center justify-center rounded-full px-5 py-2 text-base font-semibold text-primary border-2 border-primary hover:bg-primary hover:text-white transition-all duration-300 ease-in-out"
+                      className="group flex items-center justify-center rounded-full px-5 py-2 text-base font-semibold text-primary hover:border-2 hover:border-primary transition-all duration-300 ease-in-out"
                     >
                       Get Started
                       <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">
@@ -136,7 +136,7 @@ export default function Home() {
               </div>
               <div className="text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                  Data to enrich your online business
+                  Next-Gen Real Estate Home Customization
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-300">
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
@@ -145,7 +145,7 @@ export default function Home() {
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
                     href="#"
-                    className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                    className="rounded-lg border border-transparent bg-[#017ca2] px-4 py-3 text-base font-semibold text-white shadow-sm hover:border-white hover:bg-transparent hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
                   >
                     Get started
                   </a>
@@ -155,6 +155,38 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Featured section */}
+        <div className="featured-section">
+          <div className="gradient-blur -top-40 sm:-top-80" aria-hidden="true">
+            <div className="gradient-element left-[calc(50%-11rem)] sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+          </div>
+          
+          <h2 className="featured-heading">AS FEATURED IN</h2>
+          <div className="featured-logos">
+            <div className="logos-container">
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/ccde7660-69ac-4027-beb9-13bd63082194/yahoo.png?format=2500w" alt="yahoo finance" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/c730d06b-33e7-40c9-b483-a389971f42c5/Medium.png?format=2500w" alt="Medium" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/e5f92043-2fcf-49dd-b8fb-9a40204c0708/realtor.png?format=2500w" alt="Realtor.com" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/388ff6c2-6efc-4133-a2e3-25f7ef42a5db/franchise+times.png?format=2500w" alt="Franchise Times" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/de94a23d-93d0-42fc-b442-97d83334832c/EIN+Presswire.png?format=2500w" alt="EIN Presswire" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/c8efeac8-5b8e-4ecb-a402-77d7854026e3/Crunchbase.png?format=2500w" alt="Crunchbase" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/0c5e26f9-cdcc-48fb-b082-418b00e756a1/Authority+Magazine.png?format=500w" alt="Authority Magazine" />
+              {/* Duplicate for seamless scrolling */}
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/ccde7660-69ac-4027-beb9-13bd63082194/yahoo.png?format=2500w" alt="yahoo finance" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/c730d06b-33e7-40c9-b483-a389971f42c5/Medium.png?format=2500w" alt="Medium" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/e5f92043-2fcf-49dd-b8fb-9a40204c0708/realtor.png?format=2500w" alt="Realtor.com" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/388ff6c2-6efc-4133-a2e3-25f7ef42a5db/franchise+times.png?format=2500w" alt="Franchise Times" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/de94a23d-93d0-42fc-b442-97d83334832c/EIN+Presswire.png?format=2500w" alt="EIN Presswire" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/c8efeac8-5b8e-4ecb-a402-77d7854026e3/Crunchbase.png?format=2500w" alt="Crunchbase" />
+              <img src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/0c5e26f9-cdcc-48fb-b082-418b00e756a1/Authority+Magazine.png?format=500w" alt="Authority Magazine" />
+            </div>
+          </div>
+
+          <div className="gradient-blur top-[calc(100%-13rem)] sm:top-[calc(100%-30rem)]" aria-hidden="true">
+            <div className="gradient-element left-[calc(50%+3rem)] sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
           </div>
         </div>
       </main>
