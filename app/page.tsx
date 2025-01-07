@@ -130,7 +130,7 @@ export default function Home() {
         {/* Hero section */}
         <div className="relative isolate overflow-hidden bg-gray-900 pb-16 pt-14 sm:pb-20">
           <img
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+            src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/1724775039010-Y2WW4JP6RKBMVSPZBE11/3.png?format=2500w"
             alt=""
             className="absolute inset-0 -z-10 h-full w-full object-cover"
           />
@@ -146,8 +146,13 @@ export default function Home() {
             <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-                  Announcing our next round of funding.{' '}
-                  <a href="#" className="font-semibold text-white">
+                  ReUp Acquires Justin Bieber's Hawaii Vacation Home{' '}
+                  <a 
+                    href="https://finance.yahoo.com/news/reup-living-acquires-justin-biebers-140000953.html" 
+                    className="font-semibold text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span className="absolute inset-0" aria-hidden="true" />
                     Read more <span aria-hidden="true">&rarr;</span>
                   </a>
@@ -216,7 +221,7 @@ export default function Home() {
                   href="https://ca.finance.yahoo.com/news/reup-livings-recent-expansion-innovation-140000335.html" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="group relative rounded-full px-4 py-1.5 text-sm font-semibold text-[#017ca2] ring-1 ring-inset ring-[#017ca2]/20 hover:ring-[#017ca2]/30 transition-all duration-300"
+                  className="group relative rounded-full px-4 py-1.5 text-sm font-normal text-[#017ca2] ring-1 ring-inset ring-[#017ca2]/20 hover:ring-[#017ca2]/30 transition-all duration-300"
                 >
                   <span className="flex items-center gap-x-2">
                     Revolutionizing Home Renovation
