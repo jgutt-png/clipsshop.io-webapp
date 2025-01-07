@@ -15,7 +15,7 @@ export default function Home() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">ReUp</span>
               <img 
-                className="h-10 w-auto" 
+                className="h-10 w-auto menu-item" 
                 src="https://reup-main-website.s3.us-east-2.amazonaws.com/Logo_blue_web.png" 
                 alt="ReUp Logo" 
               />
@@ -34,15 +34,15 @@ export default function Home() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-6">
-            <a href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary transition-colors">Product</a>
-            <a href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary transition-colors">Features</a>
-            <a href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary transition-colors">Marketplace</a>
-            <a href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary transition-colors">Company</a>
+            <a href="#" className="menu-item text-base font-semibold leading-6 text-gray-900 hover:text-primary transition-colors">Product</a>
+            <a href="#" className="menu-item text-base font-semibold leading-6 text-gray-900 hover:text-primary transition-colors">Features</a>
+            <a href="#" className="menu-item text-base font-semibold leading-6 text-gray-900 hover:text-primary transition-colors">Marketplace</a>
+            <a href="#" className="menu-item text-base font-semibold leading-6 text-gray-900 hover:text-primary transition-colors">Company</a>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a 
               href="#" 
-              className="group rounded-full px-5 py-2 text-base font-semibold text-primary hover:border-2 hover:border-primary transition-all duration-300 ease-in-out"
+              className="menu-item group rounded-full px-5 py-2 text-base font-semibold text-primary hover:border-2 hover:border-primary transition-all duration-300 ease-in-out"
             >
               Get Started
               <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">
@@ -63,7 +63,7 @@ export default function Home() {
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">ReUp</span>
                   <img 
-                    className="h-10 w-auto" 
+                    className="h-10 w-auto menu-item" 
                     src="https://reup-main-website.s3.us-east-2.amazonaws.com/Logo_blue_web.png" 
                     alt="ReUp Logo" 
                   />
@@ -82,15 +82,15 @@ export default function Home() {
               <div className="mt-6 flow-root">
                 <div className="-my-6 divide-y divide-gray-500/10">
                   <div className="space-y-2 py-6">
-                    <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-primary/10">Product</a>
-                    <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-primary/10">Features</a>
-                    <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-primary/10">Marketplace</a>
-                    <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-primary/10">Company</a>
+                    <a href="#" className="menu-item -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+                    <a href="#" className="menu-item -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+                    <a href="#" className="menu-item -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+                    <a href="#" className="menu-item -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
                   </div>
                   <div className="py-6">
                     <a
                       href="#"
-                      className="group flex items-center justify-center rounded-full px-5 py-2 text-base font-semibold text-primary hover:border-2 hover:border-primary transition-all duration-300 ease-in-out"
+                      className="menu-item group flex items-center justify-center rounded-full px-5 py-2 text-base font-semibold text-primary hover:border-2 hover:border-primary transition-all duration-300 ease-in-out"
                     >
                       Get Started
                       <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">
