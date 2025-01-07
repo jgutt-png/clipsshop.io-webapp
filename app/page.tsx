@@ -237,13 +237,13 @@ export default function Home() {
 
             <div className="mt-16 flow-root sm:mt-24">
               <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-                <img 
-                  src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/1705018644729-RQBKQNLWDQRXS1VKXM3P/Reup+Website+Mockup+2.png" 
-                  alt="ReUp Platform Screenshot" 
-                  width="2432" 
-                  height="1442" 
-                  className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
-                />
+                <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl">
+                  <img 
+                    src="https://reup-main-website.s3.us-east-2.amazonaws.com/BASE+Customization+GIF.gif"
+                    alt="ReUp BASE Platform Demo" 
+                    className="absolute inset-0 w-full h-full object-cover rounded-xl shadow-xl ring-1 ring-gray-400/10"
+                  />
+                </div>
               </div>
             </div>
 
