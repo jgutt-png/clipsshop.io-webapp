@@ -15,7 +15,7 @@ export default function Home() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">ReUp</span>
               <img 
-                className="h-12 w-auto" 
+                className="h-10 w-auto" 
                 src="https://reup-main-website.s3.us-east-2.amazonaws.com/Logo_blue_web.png" 
                 alt="ReUp Logo" 
               />
@@ -63,7 +63,7 @@ export default function Home() {
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">ReUp</span>
                   <img 
-                    className="h-12 w-auto" 
+                    className="h-10 w-auto" 
                     src="https://reup-main-website.s3.us-east-2.amazonaws.com/Logo_blue_web.png" 
                     alt="ReUp Logo" 
                   />
