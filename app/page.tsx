@@ -188,6 +188,90 @@ export default function Home() {
           <div className="gradient-blur top-[calc(100%-13rem)] sm:top-[calc(100%-30rem)]" aria-hidden="true">
             <div className="gradient-element left-[calc(50%+3rem)] sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
           </div>
+
+          {/* Feature section */}
+          <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:max-w-none">
+              <div className="inline-flex">
+                <a 
+                  href="https://ca.finance.yahoo.com/news/reup-livings-recent-expansion-innovation-140000335.html" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="group relative rounded-full px-4 py-1.5 text-sm font-semibold text-[#017ca2] ring-1 ring-inset ring-[#017ca2]/20 hover:ring-[#017ca2]/30 transition-all duration-300"
+                >
+                  <span className="flex items-center gap-x-2">
+                    Revolutionizing Home Renovation
+                    <span className="font-semibold group-hover:translate-x-0.5 transition-transform duration-300">
+                      Read more <span aria-hidden="true">→</span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <p className="mt-6 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Everything you need to transform your home</p>
+              <p className="mt-6 text-pretty text-lg/8 text-gray-600 max-w-2xl">Our innovative platform combines AI technology with expert craftsmanship to deliver stunning home renovations that are both cost-effective and value-enhancing.</p>
+            </div>
+
+            <div className="mt-16 flow-root sm:mt-24">
+              <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/66cdfa77f073ba2e3e560ff6/1705018644729-RQBKQNLWDQRXS1VKXM3P/Reup+Website+Mockup+2.png" 
+                  alt="ReUp Platform Screenshot" 
+                  width="2432" 
+                  height="1442" 
+                  className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
+                />
+              </div>
+            </div>
+
+            <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                <div className="relative pl-16">
+                  <dt className="text-base/7 font-semibold text-gray-900">
+                    <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-[#017ca2]">
+                      <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75Z" />
+                      </svg>
+                    </div>
+                    AI-Powered Design
+                  </dt>
+                  <dd className="mt-2 text-base/7 text-gray-600">Advanced AI technology that helps visualize your renovation before it begins, ensuring your vision comes to life exactly as planned.</dd>
+                </div>
+                <div className="relative pl-16">
+                  <dt className="text-base/7 font-semibold text-gray-900">
+                    <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-[#017ca2]">
+                      <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25Z" />
+                      </svg>
+                    </div>
+                    Verified Contractors
+                  </dt>
+                  <dd className="mt-2 text-base/7 text-gray-600">Work with our network of thoroughly vetted, professional contractors who deliver exceptional quality and reliability.</dd>
+                </div>
+                <div className="relative pl-16">
+                  <dt className="text-base/7 font-semibold text-gray-900">
+                    <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-[#017ca2]">
+                      <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                      </svg>
+                    </div>
+                    Smart Financing
+                  </dt>
+                  <dd className="mt-2 text-base/7 text-gray-600">Flexible financing options that make your dream renovation affordable, with transparent terms and competitive rates.</dd>
+                </div>
+                <div className="relative pl-16">
+                  <dt className="text-base/7 font-semibold text-gray-900">
+                    <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-[#017ca2]">
+                      <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+                      </svg>
+                    </div>
+                    Project Protection
+                  </dt>
+                  <dd className="mt-2 text-base/7 text-gray-600">Comprehensive project management and quality assurance to ensure your renovation is completed on time and to your satisfaction.</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
         </div>
       </main>
     </div>
