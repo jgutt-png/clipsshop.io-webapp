@@ -112,19 +112,19 @@ a {
 }
 
 .menu-item {
-  animation: popFadeIn 0.7s cubic-bezier(0.34, 1.2, 0.64, 1) forwards;
+  animation: popFadeIn 1.5s cubic-bezier(0.34, 1.2, 0.64, 1) forwards;
   opacity: 0;
 }
 
 /* Logo appears first */
-img.menu-item { animation-delay: 0.02s; }
+img.menu-item { animation-delay: 0.1s; }
 
-/* Menu items appear after */
-a.menu-item:nth-child(1) { animation-delay: 0.04s; }
-a.menu-item:nth-child(2) { animation-delay: 0.04s; }
-a.menu-item:nth-child(3) { animation-delay: 0.04s; }
-a.menu-item:nth-child(4) { animation-delay: 0.04s; }
-a.menu-item:nth-child(5) { animation-delay: 0.04s; }
+/* Menu items appear with alternating delays */
+a.menu-item:nth-child(odd) { animation-delay: 0.2s; }
+a.menu-item:nth-child(even) { animation-delay: 0.3s; }
+
+/* Get Started button appears last */
+a.menu-item:last-child { animation-delay: 0.4s; }
 
 .gradient-blur {
   @apply absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl;
@@ -133,4 +133,19 @@ a.menu-item:nth-child(5) { animation-delay: 0.04s; }
 .gradient-element {
   @apply relative aspect-[1155/678] w-[20rem] -translate-x-1/2 bg-gradient-to-tr from-[#017ca2] to-[#017ca2]/60 opacity-20;
   clip-path: circle(30% at 50% 50%);
+}
+
+/* Logo transition */
+.logo-container {
+  transition: transform 0.3s ease-out;
+}
+
+.logo-container img {
+  height: 32px; /* Initial smaller size */
+  width: auto;
+  transition: height 0.3s ease-out;
+}
+
+.logo-container.scrolled img {
+  height: 40px; /* Larger size after scroll */
 }

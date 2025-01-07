@@ -1,10 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./../app/app.css";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 20 && !isScrolled) {
+        setIsScrolled(true);
+      } else if (scrollPosition <= 20 && isScrolled) {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isScrolled]);
 
   return (
     <div className="bg-white">
@@ -14,11 +29,13 @@ export default function Home() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">ReUp</span>
-              <img 
-                className="h-10 w-auto menu-item" 
-                src="https://reup-main-website.s3.us-east-2.amazonaws.com/Logo_blue_web.png" 
-                alt="ReUp Logo" 
-              />
+              <div className={`logo-container ${isScrolled ? 'scrolled' : ''}`}>
+                <img 
+                  className="menu-item w-auto" 
+                  src="https://reup-main-website.s3.us-east-2.amazonaws.com/Logo_blue_web.png" 
+                  alt="ReUp Logo" 
+                />
+              </div>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -62,11 +79,13 @@ export default function Home() {
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">ReUp</span>
-                  <img 
-                    className="h-10 w-auto menu-item" 
-                    src="https://reup-main-website.s3.us-east-2.amazonaws.com/Logo_blue_web.png" 
-                    alt="ReUp Logo" 
-                  />
+                  <div className={`logo-container ${isScrolled ? 'scrolled' : ''}`}>
+                    <img 
+                      className="menu-item w-auto" 
+                      src="https://reup-main-website.s3.us-east-2.amazonaws.com/Logo_blue_web.png" 
+                      alt="ReUp Logo" 
+                    />
+                  </div>
                 </a>
                 <button
                   type="button"
