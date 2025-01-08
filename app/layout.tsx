@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./app.css";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ReUp Living",
-  description: "ReUp - Revolutionizing Real Estate Investment",
+  title: "ClipsShop",
+  description: "ClipsShop - Your Digital Asset Management Solution",
   icons: {
-    icon: [
-      { url: 'https://reup-main-website.s3.us-east-2.amazonaws.com/logo.ico.ico', sizes: 'any' },
-    ],
-    shortcut: 'https://reup-main-website.s3.us-east-2.amazonaws.com/logo.ico.ico',
-    apple: 'https://reup-main-website.s3.us-east-2.amazonaws.com/logo.ico.ico',
+    icon: "https://s3.us-west-1.amazonaws.com/clipshop.assets/Clipshop+Logo.ico",
   },
 };
 
@@ -24,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="https://reup-main-website.s3.us-east-2.amazonaws.com/logo.ico.ico" sizes="any" />
+        <link rel="icon" href="https://s3.us-west-1.amazonaws.com/clipshop.assets/Clipshop+Logo.ico" sizes="any" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
