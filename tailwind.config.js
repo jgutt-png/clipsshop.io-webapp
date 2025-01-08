@@ -8,8 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#017ca2',
-        secondary: '#4da6be',
+        brand: '#6900ff',
+        primary: '#6900ff',
+        secondary: '#8f3fff',
       },
       keyframes: {
         slideRight: {
