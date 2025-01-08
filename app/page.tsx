@@ -49,7 +49,7 @@ export default function Home(): ReactElement {
             </a>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="/login" className="text-sm font-semibold leading-6 text-white bg-brand px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:bg-brand/90">
+            <a href="/auth/login" className="text-sm font-semibold leading-6 text-white bg-brand px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:bg-brand/90">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
