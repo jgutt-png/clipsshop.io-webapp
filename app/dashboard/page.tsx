@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Auth } from '@aws-amplify/auth';
+import { getCurrentUser } from '@aws-amplify/auth';
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -13,7 +13,7 @@ export default function DashboardPage() {
 
   const checkAuth = async () => {
     try {
-      await Auth.currentAuthenticatedUser();
+      await getCurrentUser();
     } catch (err) {
       router.push('/auth/login');
     }

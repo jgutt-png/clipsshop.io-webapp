@@ -1,7 +1,7 @@
 'use client';
 
 import { Amplify } from 'aws-amplify';
-import { Auth } from '@aws-amplify/auth';
+import { signInWithRedirect, signOut } from '@aws-amplify/auth';
 
 const config = {
   Auth: {
@@ -17,7 +17,6 @@ export function configureAmplify() {
   if (typeof window !== 'undefined') {
     try {
       Amplify.configure(config);
-      Auth.configure(config);
     } catch (error) {
       console.error('Error configuring Amplify:', error);
     }

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Auth } from '@aws-amplify/auth';
+import { signUp, signIn, signOut, resetPassword, confirmResetPassword } from '@aws-amplify/auth';
 
 interface SignUpData {
   name: string;
@@ -26,7 +26,7 @@ export function useAuth() {
     setError(null);
 
     try {
-      await Auth.signUp({
+      await signUp({
         username: data.email,
         password: data.password,
         attributes: {
@@ -51,7 +51,7 @@ export function useAuth() {
     setError(null);
 
     try {
-      await Auth.signIn(data.email, data.password);
+      await signIn({ username: data.email, password: data.password });
       return true;
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred during sign in');
@@ -66,7 +66,7 @@ export function useAuth() {
     setError(null);
 
     try {
-      await Auth.signOut();
+      await signOut();
       return true;
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred during sign out');
@@ -81,7 +81,7 @@ export function useAuth() {
     setError(null);
 
     try {
-      await Auth.forgotPassword(email);
+      await resetPassword({ username: email });
       return true;
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred');
@@ -96,7 +96,7 @@ export function useAuth() {
     setError(null);
 
     try {
-      await Auth.forgotPasswordSubmit(email, code, newPassword);
+      await confirmResetPassword({ username: email, confirmationCode: code, newPassword });
       return true;
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred');

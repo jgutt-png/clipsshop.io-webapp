@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -58,5 +62,31 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-gray-600 hover:text-clipshop-purple transition-colors duration-300;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-clipshop-purple to-clipshop-purple-light bg-clip-text text-transparent;
+  }
+  
+  .hover-gradient {
+    @apply hover:bg-gradient-to-r hover:from-clipshop-purple hover:to-clipshop-purple-light hover:text-white transition-all duration-300;
+  }
+
+  .hover-scale {
+    @apply hover:scale-105 transition-transform duration-300;
+  }
+
+  .hover-lift {
+    @apply hover:-translate-y-1 transition-transform duration-300;
+  }
+
+  .card-shadow {
+    @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
   }
 }
